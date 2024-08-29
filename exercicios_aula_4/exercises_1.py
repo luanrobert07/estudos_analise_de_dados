@@ -28,6 +28,18 @@ array_1d = mtz.ravel()
 print(array_1d)
 
 # Number 5
+matriz = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+
+n_linhas, n_colunas = matriz.shape
+
+total_elementos = n_linhas * n_colunas
+
+if total_elementos % 2 == 0:
+    print("A matriz pode se tornar um vetor com um número par de elementos.")
+else:
+    print("A matriz pode se tornar um vetor com um número ímpar de elementos.")
+
+
 
 
 
