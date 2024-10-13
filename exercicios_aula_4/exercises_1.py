@@ -16,12 +16,13 @@ print(np.sort(concat))
 
 # Number 3
 
-print(np.sort(concat) [::-1])
+print(np.flip(np.sort(concat)))
 
 # Number 4
 
 mtz = np.ones((3, 4))
 print(mtz)
+
 
 array_1d = mtz.ravel()
 

@@ -7,6 +7,8 @@ print('Exercício 1')
 
 # Obtendo o número total de missões
 total_missoes = ds.shape[0]
+print(total_missoes)
+print('colunas', ds[0, :])
 
 # Contando o número de missões bem-sucedidas
 missoes_bem_sucedidas = np.sum(ds[:, -1] == 'Success')
@@ -23,6 +25,7 @@ print('Exercício 2')
 custos = ds[:, -2]
 
 custos_validos = []
+
 for custo in custos:
     try:
         custo_float = float(custo)
@@ -50,6 +53,7 @@ print('Exercício 4')
 
 # Filtrando as missões da SpaceX
 spacex_missoes = ds[ds[:, 1] == 'SpaceX']
+print(spacex_missoes)
 
 # Extraindo os custos
 custos = spacex_missoes[:, -2]

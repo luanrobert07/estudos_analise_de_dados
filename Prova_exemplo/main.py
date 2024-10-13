@@ -63,9 +63,11 @@ latin_america = regioes_nothing_space == 'LATIN AMER. & CARIB'
 latin_american_countries = countries[latin_america]
 latin_american_gdp = gdp_per_capita[latin_america]
 
+
 latin_american_gdp = latin_american_gdp.astype(float)
 
 max_gdp_index = np.argmax(latin_american_gdp)
+print(max_gdp_index)
 
 country_with_max_gdp = latin_american_countries[max_gdp_index]
 
