@@ -22,9 +22,16 @@ print("Questão 3")
 coluna_literacy = ds[1:,9]
 print(coluna_literacy)
 
+
+
+
+
 total_coluna_literacy = len(coluna_literacy)
 coluna_literacy = coluna_literacy.astype(float)
 sum_coluna_literacy = np.sum(coluna_literacy)
+
+media_coluna_literacy = np.mean(coluna_literacy)
+print(media_coluna_literacy)
 
 taxa_media = (sum_coluna_literacy/total_coluna_literacy)
 

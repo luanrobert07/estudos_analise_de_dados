@@ -13,6 +13,7 @@ print('colunas', ds[0, :])
 # Contando o número de missões bem-sucedidas
 missoes_bem_sucedidas = np.sum(ds[:, -1] == 'Success')
 
+
 # Calculando a porcentagem de missões bem-sucedidas
 porcentagem_sucesso = (missoes_bem_sucedidas / total_missoes) * 100
 print(f"Porcentagem de missões bem-sucedidas: {porcentagem_sucesso:.2f}%")
@@ -57,6 +58,11 @@ print(spacex_missoes)
 
 # Extraindo os custos
 custos = spacex_missoes[:, -2]
+
+indice_custo_maior = np.argmax(custos)
+maior_custo_indice = custos[indice_custo_maior]
+
+print(maior_custo_indice)
 
 # Inicializando variáveis para encontrar a missão mais cara
 maior_custo = 0
