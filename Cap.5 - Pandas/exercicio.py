@@ -16,6 +16,8 @@ print(paises_oceania)
 print('Quantidade de países na Oceania: ', quantPaíses)
 
 
+
+
 print('Média da taxa de alfabetização(%): ', df['Literacy (%)'].mean())
 
 
