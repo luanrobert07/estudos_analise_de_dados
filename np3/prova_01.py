@@ -31,8 +31,8 @@ print(aumento10Porcento)
 
 # Exercício 4
 
-slicingColumns = ds[:, [0, 1, 2]]
-print(slicingColumns)
+slicingColumns = ds[1:, [0, 1, 2]]
+print(slicingColumns[slicingColumns[:,2].astype(int) > 2000, 0])
 
 # Exercício 5
 anos, contagens = np.unique(ds[1:, 2], return_counts=True)
